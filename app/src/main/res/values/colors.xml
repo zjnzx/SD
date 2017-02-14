@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme colors -->
+    <color name="theme_default_primary">#0288D1</color>
+    <color name="theme_default_primary_dark">#3f51b5</color>
+    <color name="theme_accent">#ff4081</color>
+    <color name="theme_window_background">#ECECEC</color>
+
+    <!-- general text colors -->
+    <color name="text">#212121</color>
+    <color name="secondary">#727272</color>
+    <color name="hint">#B8B8B8</color>
+    <color name="project_select">#BDBDBD</color>
+    <color name="dividers">#DADADA</color>
+    <color name="cardview">#C6C6C6</color>
+    <color name="blue">#0000ff</color>
+    <color name="rd_bc_unchecked">#000000</color>
+    <color name="rd_bc_checked">#00B050</color>
+    <color name="rd_no_checked">#FFC000</color>
+    <color name="rd_null_checked">#ccc</color>
+
+
+
+    <!-- general colors for drawer -->
+    <color name="list_background">#F2F2F2</color>
+    <!-- primary colors for drawer -->
+    <color name="list_background_normal">#FCFCFC</color>
+    <!-- secondary colors for drawer -->
+    <color name="list_background_secondary_normal">#F2F2F2</color>
+    <color name="slide_menu_bg_index">#333E44</color>
+
+    <drawable name="camera_back_press">#1b1b1b</drawable>
+
+    <drawable name="camera_back_default">#2f2f2f</drawable>
+
+
+    <color name="ripple">#ff80ab</color>
+    <color name="accent">#ff4081</color>
+    <color name="accent_pressed">#f50057</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#e3e3e3</color>
+
+
+    <color name="material_blue_500">#5677fc</color>
+    <color name="material_blue_600">#4e6cef</color>
+
+    <color name="rippelColor">#7C7C7C</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#C6C6C6</color>
+    <color name="lite_blue">#4e6cef</color>
+    <!--淡红色-->
+    <color name="lite_red">#FBAF66</color>
+
+    <color name="window_background">#000</color>
+    <color name="textcolor">#000</color>
+
+    <color name="popup_title_color">#ffc9cdd1</color>
+    <color name="advance_setting_item_bg">#fff8f8</color>
+    <color name="light_blue">#33b5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="textdec">#f18c14</color>
+
+</resources>

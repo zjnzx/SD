@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    >
+    <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:id="@+id/red_device_order1"
+                android:duplicateParentState="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textColor="@color/text"
+                android:text=""
+                />
+            <TextView
+                android:id="@+id/red_device_name"
+                android:textSize="12sp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:text=""
+                />
+            <TextView
+                android:id="@+id/device_type"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/device_id"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text"
+                android:text=""/>
+            <CheckBox
+                android:id="@+id/red_check"
+                style="@style/custom_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:checked="true"/>
+        </RelativeLayout>
+        <View android:clickable="false" android:layout_alignParentBottom="true"  android:layout_width="match_parent" android:layout_height="1px" android:background="@color/dividers"/>
+    </RelativeLayout>
+</LinearLayout>

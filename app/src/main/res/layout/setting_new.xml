@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/theme_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/button_rect_list_normal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="设  置"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+    <com.energyfuture.symphony.m3.ripple.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        ripple:rv_type="rectangle">
+
+        <LinearLayout
+            android:id="@+id/ll_sdManager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/sdcard"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SD卡管理"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:layout_marginLeft="20dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/setting_next"
+                android:layout_marginRight="20dp" />
+
+
+        </LinearLayout>
+    </com.energyfuture.symphony.m3.ripple.RippleView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D2D2D2" />
+
+    <com.energyfuture.symphony.m3.ripple.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        ripple:rv_type="rectangle">
+
+        <LinearLayout
+            android:id="@+id/ll_MessageManager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/msgmanager"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息内容管理"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:layout_marginLeft="20dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/setting_next"
+                android:layout_marginRight="20dp" />
+
+
+        </LinearLayout>
+    </com.energyfuture.symphony.m3.ripple.RippleView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D2D2D2" />
+
+    <com.energyfuture.symphony.m3.ripple.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        ripple:rv_type="rectangle">
+
+        <LinearLayout
+            android:id="@+id/ll_flowManager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/flow"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="流量管理"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:layout_marginLeft="20dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/setting_next"
+                android:layout_marginRight="20dp" />
+
+
+        </LinearLayout>
+    </com.energyfuture.symphony.m3.ripple.RippleView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D2D2D2" />
+
+    <com.energyfuture.symphony.m3.ripple.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        ripple:rv_type="rectangle">
+
+        <LinearLayout
+            android:id="@+id/ll_dataUpload"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/dataupload"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据更新"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:layout_marginLeft="20dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/setting_next"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+    </com.energyfuture.symphony.m3.ripple.RippleView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D2D2D2" />
+
+    <com.energyfuture.symphony.m3.ripple.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        ripple:rv_type="rectangle">
+
+        <LinearLayout
+            android:id="@+id/ll_memory"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/storage"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="存储"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:layout_marginLeft="20dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/setting_next"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+    </com.energyfuture.symphony.m3.ripple.RippleView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D2D2D2" />
+
+    <com.energyfuture.symphony.m3.ripple.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        ripple:rv_type="rectangle">
+
+        <LinearLayout
+            android:id="@+id/ll_tools"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/storage"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="常用工具"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:layout_marginLeft="20dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/setting_next"
+                android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+    </com.energyfuture.symphony.m3.ripple.RippleView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D2D2D2" />
+
+</LinearLayout>

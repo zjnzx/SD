@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exception">
+        <item >因位置原因，无法进行测试</item>
+        <item >与出线套管不满足安全距离，无法测试</item>
+        <item >其它</item>
+    </string-array>
+
+    <string-array name="date">
+        <item>年</item>
+        <item>月</item>
+        <item>日</item>
+        <item>时</item>
+        <item>分</item>
+    </string-array>
+
+</resources>

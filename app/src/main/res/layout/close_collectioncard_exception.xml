@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="200dp">
+    <TextView
+        android:id="@+id/exceptionName"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="left"
+        android:textColor="@color/cardview"
+        android:textSize="16dp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/collectionCardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="#000000"
+        android:text="关闭原因"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/close_cause"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="#000000"
+        android:hint="异常内容"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"
+        android:minLines="2"
+        android:maxLines="2"
+        android:background="@drawable/iforminput_bg"
+        android:maxLength="25"
+        android:textSize="16dp"/>
+
+
+</LinearLayout>

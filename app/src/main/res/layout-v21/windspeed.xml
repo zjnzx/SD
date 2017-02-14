@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wind_speedLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rect_list_normal"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/wind_Scale"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_marginTop="6dp"
+            android:textColor="#838383"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/wind_speed"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="2"
+            android:textColor="#838383"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/ground_featrues"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="8"
+            android:layout_marginTop="6dp"
+            android:textColor="#838383"
+            android:textSize="16dp" />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

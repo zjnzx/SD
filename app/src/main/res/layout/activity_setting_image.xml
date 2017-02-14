@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/theme_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/button_rect_list_normal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SD卡管理"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dip">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:textColor="#000000"
+                android:text="红外热成像"
+                android:textSize="16dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:textColor="#000000"
+                    android:text="SD卡文件路径："
+                    android:textSize="16dp"/>
+                <EditText
+                    android:id="@+id/rh_sd_route"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="#000000"
+                    android:inputType="textMultiLine"
+                    android:gravity="left|top"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:background="@drawable/iforminput_bg"
+                    android:maxLength="50"
+                    android:textSize="16dp"
+                    android:text="http://flashair/images/DirA/"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:textColor="#000000"
+                        android:text="     文件名前缀："
+                        android:textSize="16dp"/>
+                    <EditText
+                        android:id="@+id/rh_file_prefix"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textColor="#000000"
+                        android:inputType="textMultiLine"
+                        android:gravity="left|top"
+                        android:maxLines="1"
+                        android:background="@drawable/iforminput_bg"
+                        android:maxLength="50"
+                        android:textSize="16dp"
+                        android:text="IR_;DC_"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:textColor="#000000"
+                        android:text="     文件名后缀："
+                        android:textSize="16dp"/>
+                    <EditText
+                        android:id="@+id/rh_file_postfix"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textColor="#000000"
+                        android:inputType="textMultiLine"
+                        android:gravity="left|top"
+                        android:maxLines="1"
+                        android:background="@drawable/iforminput_bg"
+                        android:maxLength="50"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom|right">
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="确   定"
+            android:layout_marginRight="45dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/affirm_button_sel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

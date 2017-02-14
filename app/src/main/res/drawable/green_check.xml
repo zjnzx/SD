@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <!-- 默认背景颜色 -->
+            <solid android:color="#00B050" />
+        </shape>
+    </item>
+    <item android:id="@+id/user_face_drawable" android:drawable="@drawable/ic_check_white_48dp"
+        android:left="6.0dip" android:top="6.0dip" android:right="6.0dip"
+        android:bottom="6.0dip" />
+</layer-list>

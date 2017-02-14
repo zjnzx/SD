@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="10dp"
+    android:clickable="true"
+    android:layout_marginRight="15dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#000000"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+            <RelativeLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/remarkException"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="120dp"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_rect_list_normal"/>
+                <ImageView
+                android:id="@+id/pic_add_environment"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_done_black_24dp"
+                android:background="@drawable/button_rect_list_normal"/>
+                <ImageView
+                android:id="@+id/pic_update_environment"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_create_black_24dp"
+                android:background="@drawable/button_rect_list_normal"/>
+                <ImageView
+                    android:id="@+id/pic_delete_environment"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete_grey600_24dp"
+                    android:background="@drawable/button_rect_list_normal"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="569dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:divider="?android:attr/listDivider"
+                    android:orientation="horizontal"
+                    android:showDividers="middle" >
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="6dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="记录时间"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <com.energyfuture.symphony.m3.ui.MyEditTextFocus
+                                    android:id="@+id/recordTime"
+                                    android:layout_marginTop="13dp"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="2015-04-28 16:46"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="6dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="35dp"
+                                    android:text="区域名称"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <com.energyfuture.symphony.m3.ui.MyEditText
+                                    android:id="@+id/areaname"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="666.7"
+                                    android:background="@null"
+                                    android:imeOptions="actionNext"
+                                    android:textIsSelectable="false"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+                                <!--<Spinner-->
+                                    <!--android:id="@+id/areaname_sp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:layout_width="70dp"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="15dp"-->
+                                    <!--android:text="666.7"-->
+                                    <!--android:visibility="gone"-->
+                                    <!--android:textColor="#000000"-->
+                                    <!--android:textSize="22dp" />-->
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="6dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="35dp"
+                                    android:text="设备名称"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <com.energyfuture.symphony.m3.ui.MyEditText
+                                    android:id="@+id/equipmentname"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text=""
+                                    android:background="@null"
+                                    android:imeOptions="actionNext"
+                                    android:textIsSelectable="false"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <com.energyfuture.symphony.m3.ui.MyEditTextFocus
+                                    android:id="@+id/environmentId"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="uuid"
+                                    android:visibility="gone"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+                                <com.energyfuture.symphony.m3.ui.MyEditTextFocus
+                                    android:id="@+id/taskId"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="taskId001"
+                                    android:visibility="gone"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+                                <com.energyfuture.symphony.m3.ui.MyEditTextFocus
+                                    android:id="@+id/stationId"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="stationId001"
+                                    android:visibility="gone"
+                                    android:textColor="#000000"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:divider="?android:attr/listDivider"
+                    android:orientation="horizontal"
+                    android:showDividers="middle" >
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="6dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="有功功率"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <com.energyfuture.symphony.m3.ui.MyEditText
+                                    android:id="@+id/activepower"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="666.7"
+                                    android:background="@null"
+                                    android:imeOptions="actionNext"
+                                    android:textIsSelectable="false"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="90dp"
+                                    android:text="KW"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="35dp"
+                                    android:text="无功功率"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <com.energyfuture.symphony.m3.ui.MyEditText
+                                    android:id="@+id/reactivepower"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="666.7"
+                                    android:background="@null"
+                                    android:imeOptions="actionNext"
+                                    android:textIsSelectable="false"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="100dp"
+                                    android:text="KVar"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="35dp"
+                                    android:text="A相电流"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <com.energyfuture.symphony.m3.ui.MyEditText
+                                    android:id="@+id/A_electricity"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="666.7"
+                                    android:background="@null"
+                                    android:imeOptions="actionNext"
+                                    android:textIsSelectable="false"
+                                    android:textColor="#000000"
+                                    android:inputType="numberDecimal"
+                                    android:textSize="20sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="100dp"
+                                    android:text="A"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:divider="?android:attr/listDivider"
+                    android:orientation="horizontal"
+                    android:showDividers="middle" >
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="6dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="B相电流"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <com.energyfuture.symphony.m3.ui.MyEditText
+                                    android:id="@+id/B_electricity"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="666.7"
+                                    android:imeOptions="actionNext"
+                                    android:textIsSelectable="false"
+                                    android:background="@null"
+                                    android:textColor="#000000"
+                                    android:inputType="numberDecimal"
+                                    android:textSize="20sp" />
+
+                                <Spinner
+                                    android:id="@+id/environmentwether_sp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:text="666.7"
+                                    android:visibility="gone"
+                                    android:textColor="#000000"
+                                    android:textSize="22dp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="90dp"
+                                    android:text="A"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="35dp"
+                                    android:text="C相电流"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <com.energyfuture.symphony.m3.ui.MyEditText
+                                    android:id="@+id/C_electricity"
+                                    android:layout_marginTop="14dp"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:text="666.7"
+                                    android:background="@null"
+                                    android:imeOptions="actionNext"
+                                    android:textIsSelectable="false"
+                                    android:inputType="numberDecimal"
+                                    android:textColor="#000000"
+                                    android:textSize="20sp" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginLeft="100dp"
+                                    android:text="A"
+                                    android:textColor="#838383"
+                                    android:textSize="16dp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginTop="1dp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="35dp"
+                                    android:text=""
+                                    android:textColor="#838383"
+                                    android:textSize="16sp" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#000000"/>
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/workingconditionPersion"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="admin记录"
+                    android:textColor="#838383"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/progressbar_show"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#E8F2FE"
+        >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="5dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/down_image"
+            android:layout_marginTop="63dp"
+            android:max="100"
+            android:progressDrawable="@drawable/progress_diy" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/progress_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="14dp"
+            android:textColor="#000000"
+            android:text="正在下载："
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dowm_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_marginRight="17dp"
+            android:textColor="#000000"
+            android:text="(4/4)"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/down_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progress_bar"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:text="最新项目下载"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

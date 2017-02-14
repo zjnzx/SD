@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center|bottom"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设 置"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    <RadioGroup
+        android:id="@+id/setting_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/setting_rb_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:text="SD卡设置"
+            android:checked="true"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@drawable/radiobuttontextcolor"
+            android:background="@drawable/radiobuttonbacgroud"/>
+        <RadioButton
+            android:id="@+id/setting_rb_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="消息记录"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@drawable/radiobuttontextcolor"
+            android:background="@drawable/radiobuttonbacgroud"/>
+        <RadioButton
+            android:id="@+id/setting_rb_flow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="流量管理"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@drawable/radiobuttontextcolor"
+            android:background="@drawable/radiobuttonbacgroud"/>
+
+    </RadioGroup>
+    <android.support.v4.view.ViewPager 
+    android:id="@+id/setting_vp"
+    android:layout_width="match_parent"
+  	    android:layout_height="0dp"
+  	    android:layout_weight="1"/>
+
+   
+
+    
+</LinearLayout>

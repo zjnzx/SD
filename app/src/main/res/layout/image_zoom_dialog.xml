@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0000000"
+>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_image_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/window_background"
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:elevation="4dp"
+        android:transitionName="actionBar"/>
+    <ViewSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imagezoomdialog_view_switcher" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:id="@+id/imagezoomdialog_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleLarge"/>
+            <!--<ImageView
+                android:id="@+id/imagezoomdialog_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:scaleType="matrix"/>-->
+            <com.polites.android.GestureImageView
+                android:id="@+id/imagezoomdialog_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                gesture-image:max-scale="10.0"
+                android:background="#e0000000"
+            gesture-image:min-scale="0.1"
+                gesture-image:strict="false" />
+        </FrameLayout>
+    </ViewSwitcher>
+</LinearLayout>

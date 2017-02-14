@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:gravity="left">
+    <CheckBox
+        android:id="@+id/project_check"
+        android:drawableRight="@drawable/my_checkbox"
+        android:button="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="1）试验方案准备与熟悉                 "
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:checked="false"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="left">
+        <CheckBox
+            android:id="@+id/instrument_check"
+            android:drawableRight="@drawable/my_checkbox"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2）试验仪器准备与熟悉                 "
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:checked="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="left" >
+        <CheckBox
+            android:id="@+id/safe_check"
+            android:drawableRight="@drawable/my_checkbox"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3）安全注意事项宣贯完毕             "
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:checked="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="left" >
+        <CheckBox
+            android:id="@+id/review_check"
+            android:drawableRight="@drawable/my_checkbox"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="4）上次检测情况回顾                     "
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:checked="false"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="left">
+        <CheckBox
+            android:id="@+id/over_check"
+            android:drawableRight="@drawable/my_checkbox"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="5）工作票办理完毕                         "
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:checked="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="left" >
+        <CheckBox
+            android:id="@+id/classmetting_check"
+            android:drawableRight="@drawable/my_checkbox"
+            android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="6）班前会宣贯完毕                         "
+            android:paddingLeft="10dp"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:clickable="true"
+            android:checked="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="left" >
+    <TextView
+        android:id="@+id/wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请等待项目负责人工作准备确认"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="#FF0000"/>
+</LinearLayout>
+</LinearLayout>

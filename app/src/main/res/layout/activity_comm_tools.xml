@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:id="@+id/comm_tool_lay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/theme_back_tool"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/button_rect_list_normal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="常用工具"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="25dp" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/comm_tool_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/comm_tool_lay"
+        android:paddingTop="30dp"
+        android:paddingLeft="10dp"
+        android:numColumns="4"/>
+    <ProgressBar
+        android:id="@+id/comm_tool_progressBar"
+        android:layout_centerInParent="true"
+        android:padding="72dp"
+        android:alpha="0.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false" />
+</RelativeLayout>

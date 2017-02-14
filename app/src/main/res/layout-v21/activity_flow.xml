@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MyActivity"
+    android:id="@+id/flow_drawer"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center|bottom"
+            android:background="?attr/colorPrimary">
+            <LinearLayout
+                android:id="@+id/theme_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:background="@drawable/button_rect_list_normal"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_back_white_24dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="流量管理"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="25dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="?attr/colorPrimary">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="70dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txt_sc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="上传流量："
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txt_scll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="(23.45M)"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txt_xz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="下载流量："
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txt_xzll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="(23.00M)"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txt_zg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="总流量："
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/txt_zgll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="(46.45M)"
+                    android:textColor="#ffffff"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center|right">
+
+                <ImageView
+                    android:id="@+id/flow_image_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_search_white_24dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/button_rect_list_normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="用户名"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="流量类型"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="使用类型"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="连接类型"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="使用量(kb)"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:text="时间"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.energyfuture.symphony.m3.setting.ListViewPlus
+            android:id="@+id/xlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@drawable/scrollbar_color"
+            android:paddingRight="3dp"
+            >
+        </com.energyfuture.symphony.m3.setting.ListViewPlus>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuList"
+        android:layout_width="@dimen/drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginTop="110dp"
+        android:background="@color/list_background_normal"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:paddingLeft="10dp"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:transitionName="fab"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_filter_list_black_36dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#000000"
+                    android:text="筛选条件"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/submit_select_condition"
+                    android:transitionName="fab"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_check_black_36dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/father_menu_back"
+                    android:transitionName="fab"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_arrow_forward_black_36dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dividers" />
+
+        <LinearLayout
+            android:id="@+id/id_slidemenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dividers" />
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/flow_username_LinearLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_rect_list_normal"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:text="用户名"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/user_select_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:text="全部"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/flow_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:textColor="#000000"
+                            android:gravity="center_vertical"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:transitionName="fab"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_keyboard_arrow_right_grey600_24dp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dividers" />
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/flow_connect_time_LinearLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_rect_list_normal"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:text="连接类型"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/connect_select_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:text="全部"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/flow_connect_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:textColor="#000000"
+                            android:gravity="center_vertical"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:transitionName="fab"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_keyboard_arrow_right_grey600_24dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dividers" />
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/flow_type_LinearLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_rect_list_normal"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#000000"
+                            android:text="流量类型"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/station_select"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/flow_type_select_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:text="全部"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/flow_type_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:visibility="invisible"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:transitionName="fab"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_keyboard_arrow_right_grey600_24dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dividers" />
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/flow_use_type_LinearLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_rect_list_normal"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#000000"
+                            android:text="使用类型"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/grade_select"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/flow_use_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:textColor="#000000"
+                            android:gravity="center_vertical"
+                            android:text="全部"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/grade_select_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:visibility="invisible"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:transitionName="fab"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_keyboard_arrow_right_grey600_24dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dividers" />
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/flow_state_time_LinearLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_rect_list_normal"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#000000"
+                            android:text="开始时间"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/grade_state_time_select"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/flow_state_time_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:textColor="#000000"
+                            android:gravity="center_vertical"
+                            android:text="全部"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/grade_state_time_select_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:visibility="invisible"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:transitionName="fab"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_keyboard_arrow_right_grey600_24dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dividers" />
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:id="@+id/flow_end_time_LinearLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/button_rect_list_normal"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#000000"
+                            android:text="结束时间"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/grade_select_end_time"
+                        android:layout_weight="5"
+                        android:layout_width="0dp"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/flow_end_time_select"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:textColor="#000000"
+                            android:gravity="center_vertical"
+                            android:text="全部"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/grade_end_time_select_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical"
+                            android:textColor="#000000"
+                            android:visibility="invisible"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:transitionName="fab"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/ic_keyboard_arrow_right_grey600_24dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <View
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dividers" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/tool_bar_top_padding"
+        android:id="@+id/childList"
+        android:layout_width="@dimen/drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/list_background_normal"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/child_menu_back"
+                android:transitionName="fab"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/ic_arrow_back_black_36dp" />
+
+            <TextView
+                android:id="@+id/condition_name"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:textColor="#000000"
+                android:text="二级菜单名称"
+                android:layout_height="match_parent"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <View
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dividers" />
+
+        <ListView
+            android:clipToPadding="false"
+            android:id="@+id/select_condition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dividers" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
